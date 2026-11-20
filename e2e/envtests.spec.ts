@@ -22,7 +22,8 @@ test.describe("first test block ", ()=>{
           await page.getByTestId('env-password').click();
           await page.getByTestId('env-password').fill('DpLb22gBt!');
           await page.getByTestId('env-submit').click();
-          await expect(page.getByRole('alert').first()).toBeVisible();
+          await expect(page.getByRole('alert').first()).toBeVisible(); 
+          
     });
 
   
