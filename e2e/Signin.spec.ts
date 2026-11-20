@@ -7,11 +7,8 @@ test('test', async ({ page }) => {
 
   await page.getByTestId('login-email').click();
 
-  await page.getByTestId('login-email').press('ControlOrMeta+a');
 
   await page.getByTestId('login-email').fill('Test@1234');
-
-  await page.getByTestId('login-email').press('ControlOrMeta+z');
 
   await page.getByTestId('login-email').fill('demo@thedappled.com');
 
@@ -19,12 +16,8 @@ test('test', async ({ page }) => {
 
   await page.locator('div').filter({ hasText: 'Practice pageSign inWelcome' }).nth(4).click();
 
-  await page.getByTestId('login-email').press('ControlOrMeta+c');
-
   await page.getByTestId('login-email').click();
-
-  await page.getByTestId('login-email').press('ControlOrMeta+a');
-
+ 
   await page.getByTestId('login-email').fill('demo@thedappled.com');
 
   await page.getByTestId('login-password').click();
