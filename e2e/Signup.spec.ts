@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test.describe("fiest test block ", ()=>{
+test.describe("first test block ", ()=>{
     test.beforeEach( async ({page})=>{ 
        await page.goto('https://thedappled.com/testing/ui-automation/signup?a=GrYU92vHBe3Y');
     })
