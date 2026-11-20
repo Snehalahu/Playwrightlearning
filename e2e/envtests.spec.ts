@@ -11,7 +11,7 @@ test.describe("first test block ", ()=>{
           await page.getByTestId('env-email').click();
           await page.getByTestId('env-email').fill(env.email);
           await page.getByTestId('env-password').click();
-          await page.getByTestId('env-password').fill(env.);
+          await page.getByTestId('env-password').fill(env.password);
           await page.getByTestId('env-submit').click();
           await expect(page.getByRole('status')).toBeVisible();
     });
