@@ -28,7 +28,7 @@ test("Valid details + terms show the success message",async({page})=>{
     await page.getByTestId('signup-name').fill('Sneha');
     await page.getByTestId('signup-email').fill('sneha@gmail.com');
     await page.getByTestId('signup-password').fill('Test@1235');
-    await page.getByTestId('signup-confirm').fill('Test@12325');
+    await page.getByTestId('signup-confirm').fill('Test@1235');
     await page.getByTestId('signup-terms').check();
    await page.getByTestId('signup-submit').click();
    await expect(page.getByRole('status')).toBeVisible();
