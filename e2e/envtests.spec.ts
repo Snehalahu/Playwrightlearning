@@ -13,7 +13,7 @@ test.describe("first test block ", ()=>{
           await page.getByTestId('env-password').click();
           await page.getByTestId('env-password').fill(env.password);
           await page.getByTestId('env-submit').click();
-          await expect(page.getByRole('status')).toBeVisible();
+          await expect(page.getByRole('status').first()).toBeVisible();
     });
     test('Wrong password shows the error (same config)', async ({ page }) => {
         
@@ -22,7 +22,7 @@ test.describe("first test block ", ()=>{
           await page.getByTestId('env-password').click();
           await page.getByTestId('env-password').fill('DpLb22gBt!');
           await page.getByTestId('env-submit').click();
-          await expect(page.getByRole('alert')).toBeVisible();
+          await expect(page.getByRole('alert').first()).toBeVisible();
     });
 
   
