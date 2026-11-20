@@ -7,7 +7,12 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    env:
+      BASE_URL: ${{ secrets.BASE_URL }}
+      DEMO_PASSWORD: ${{ secrets.DEMO_PASSWORD }}
+
     steps:
+      
     - uses: actions/checkout@v6
     - uses: actions/setup-node@v6
       with:
